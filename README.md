@@ -7,3 +7,5 @@
 A personal blog built using [astro](https://astro.build/) and [tailwindcss](https://tailwindcss.com/).
 
 - relying heavily on [TailwindUI](https://tailwindui.com/) and [daisyUI](https://daisyui.com/docs/install/) for responsive and decent styling.
+
+View the live site [here](https://soul-gallery.netlify.app/)
