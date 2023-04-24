@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BgImageWText from "../components/BgImageWText.astro";
+import headerImg from "/images/coast-i.jpg?url";
 ---
 
 <BaseLayout pageTitle="Soul Gallery">
   <BgImageWText
-    imgSrc="/images/coast-i.jpg"
+    imgSrc={headerImg}
     altText="jj at the beach"
     header="Soul Gallery"
     text="It\'s a bit edgy but I like it"
