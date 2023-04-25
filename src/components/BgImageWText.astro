@@ -2,18 +2,15 @@
 const { imgSrc, altText, header = "", text = "" } = Astro.props;
 ---
 
-<!-- code from: https://tailwindui.com/components/marketing/sections/header#component-e89a0157d7858d7ee8df1e9415a7c550 -->
-<div
-  class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:px-8"
->
+<!-- code adapted from:https://tailwindui.com/components/marketing/sections/header#component-f295328e633edbb29e7612672e3d69cc -->
+<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
   <img
     src={imgSrc}
     alt={altText}
-    class="absolute inset-0 -z-10 h-full w-full object-cover"
+    class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
   />
   <div
     class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-    aria-hidden="true"
   >
     <div
       class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
@@ -23,7 +20,6 @@ const { imgSrc, altText, header = "", text = "" } = Astro.props;
   </div>
   <div
     class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-    aria-hidden="true"
   >
     <div
       class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
@@ -31,10 +27,51 @@ const { imgSrc, altText, header = "", text = "" } = Astro.props;
     >
     </div>
   </div>
-  <div class="mx-auto max-w-2xl text-center">
-    <h2 class="text-4xl font-bold tracking-tight text-base-content sm:text-6xl">
-      {header}
-    </h2>
-    <p class="mt-6 text-lg leading-8 text-gray-300">{text}</p>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        {header}
+      </h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        {text}
+      </p>
+    </div>
+    <div
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+    >
+      <div
+        class="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
+      >
+        <div class="text-base leading-7">
+          <h3 class="font-semibold text-white">Theology</h3>
+          <p class="mt-2 text-gray-300">
+            Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo
+            corrupti consequatur.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
+      >
+        <div class="text-base leading-7">
+          <h3 class="font-semibold text-white">Philosophy</h3>
+          <p class="mt-2 text-gray-300">
+            Quod possimus sit modi rerum exercitationem quaerat atque tenetur
+            ullam.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
+      >
+        <div class="text-base leading-7">
+          <h3 class="font-semibold text-white">Autobiography</h3>
+          <p class="mt-2 text-gray-300">
+            Ratione et porro eligendi est sed ratione rerum itaque. Placeat
+            accusantium impedit eum odit.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
