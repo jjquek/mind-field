@@ -2,4 +2,34 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout pageTitle="About" />
+<BaseLayout pageTitle="About">
+  <main class="isolate">
+    <!-- Hero section -->
+    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-40 lg:px-8">
+      <div
+        class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8"
+      >
+        <h1
+          class="max-w-2xl text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:col-span-2 xl:col-auto"
+        >
+          Thanks For Stopping By ☺️
+        </h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p class="text-lg leading-8 text-neutral-content">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt.
+            Qui irure qui lorem cupidatat commodo.
+          </p>
+        </div>
+        <img
+          src="/images/about-pic.jpg"
+          alt="jj and his bike"
+          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+        />
+      </div>
+    </div>
+
+    <!-- todo : stub out the layout for the about page-- something like a 'hero' section with the text to the side, and stacks on mobile. c.f. what they've done in the about section. -->
+  </main>
+</BaseLayout>
