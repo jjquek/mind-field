@@ -2,7 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BgImageWText from "../components/BgImageWText.astro";
 import headerImg from "/images/coast-i.jpg?url";
-import featureImg from "/images/coast-ii.jpg?url";
+import firstFeatureImg from "/images/coast-ii.jpg?url";
+import secondFeatureImg from "/images/coast-community.jpg?url";
 ---
 
 <BaseLayout pageTitle="Soul Gallery">
@@ -70,10 +71,41 @@ import featureImg from "/images/coast-ii.jpg?url";
           </div>
         </div>
         <img
-          src={featureImg}
+          src={firstFeatureImg}
           alt="jj at the beach ii"
           class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
         />
+      </div>
+    </div>
+  </div>
+  <!-- todo : narrow the gap between these two sections -->
+  <!-- Second Feature Section -->
+  <div class="overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <img
+          src={secondFeatureImg}
+          alt="jj at the beach ii"
+          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+        />
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-indigo-400">
+              But not alone
+            </h2>
+            <p
+              class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              Writing for community
+            </p>
+            <p class="mt-6 text-base leading-8 text-gray-300">
+              This site is my attempt to wonder out loud and invite others to
+              join me. It's a place to be both vocal and yet accountable.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
