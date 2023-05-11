@@ -2,13 +2,79 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BgImageWText from "../components/BgImageWText.astro";
 import headerImg from "/images/coast-i.jpg?url";
+import featureImg from "/images/coast-ii.jpg?url";
 ---
 
 <BaseLayout pageTitle="Soul Gallery">
+  <!-- Header Section -->
   <BgImageWText
     imgSrc={headerImg}
     altText="jj at the beach"
     header="Soul Gallery"
     text="writing to hear and be heard"
   />
+  <!-- First Feature Section -->
+  <div class="overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-indigo-400">
+              By faith
+            </h2>
+            <p
+              class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              Writing is an act of faith
+            </p>
+            <!-- todo : not sure whether I want to include this -->
+            <!-- <p class="mt-6 text-xs leading-8 text-gray-300">
+              (got that from <a
+                class="link-neutral link-hover"
+                href="https://www.thegospelcoalition.org/themelios/article/we-who-work-with-words-towards-a-theology-of-writing/"
+                target="_blank">this article</a
+              > who got it from <a
+                class="link"
+                href="https://scholar.google.com/citations?user=OZqUU-4AAAAJ&hl=en"
+                target="_blank">this super cool theologian.</a
+              >)
+            </p> -->
+            <dl
+              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none"
+            >
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-white">
+                  Faith in yourself as a writer
+                </dt>
+                <dd class="inline">with all the imperfections you bear</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-white">
+                  Faith in your writing
+                </dt>
+                <dd class="inline">
+                  as something that'll do good for those who read
+                </dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-white">
+                  Faith in your motivations
+                </dt>
+                <dd class="inline">
+                  to write-- that you're serving the right master
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <img
+          src={featureImg}
+          alt="jj at the beach ii"
+          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+        />
+      </div>
+    </div>
+  </div>
 </BaseLayout>
