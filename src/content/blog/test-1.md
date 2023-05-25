@@ -1,9 +1,9 @@
 ---
-draft: false
+isDraft: false
 layout: "../../layouts/BlogPostLayout.astro"
 title: "Test Post 1"
 author: "Lorem JJ"
-date: "2023-05-24"
+datePublished: "2023-05-24"
 description: "Lorem and JJ collab"
 tags: ["test", "stub"]
 ---
