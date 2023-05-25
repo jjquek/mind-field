@@ -1,0 +1,43 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import BaseLayout from "./BaseLayout.astro";
+
+type Props = MarkdownLayoutProps<{
+  // Define frontmatter props here
+  draft: boolean;
+  layout: string;
+  title: string;
+  author: string;
+  date: string;
+  description: string;
+  tags: string[];
+  // slug: string;
+  image?: string;
+  footnote?: string;
+}>;
+
+// Now, `frontmatter`, `url`, and other Markdown layout properties
+// are accessible with type safety
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <!-- todo:
+  1. figure out what to do with other frontmatter props
+  -->
+  <div class="bg-gray-900 px-6 py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl text-base leading-7 text-base-content">
+      <h1
+        class="mt-2 text-3xl font-bold tracking-tight text-accent sm:text-4xl"
+      >
+        {frontmatter.title}
+      </h1>
+      <p class="text-secondary mt-6 text-xl leading-8">
+        {frontmatter.description}
+      </p>
+      <div class="prose-lg mt-10 max-w-2xl">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
