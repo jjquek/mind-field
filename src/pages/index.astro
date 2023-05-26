@@ -2,8 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BgImageWText from "../components/BgImageWText.astro";
 import headerImg from "/images/coast-i.jpg?url";
-import firstFeatureImg from "/images/coast-ii.jpg?url";
-import secondFeatureImg from "/images/coast-community.jpg?url";
+import jjLookingOut from "/images/coast-ii.jpg?url";
+import coastCommunity from "/images/coast-community.jpg?url";
+import clocktowerCommunity from "/images/clocktower-comm.jpg?url";
+import jjAndDrew from "/images/jj-and-drew.jpg?url";
+import baCommmunity from "/images/ba-community.jpg?url";
 ---
 
 <BaseLayout pageTitle="Soul Gallery">
@@ -15,78 +18,115 @@ import secondFeatureImg from "/images/coast-community.jpg?url";
     text="new exhibitions every season"
   />
   <!-- First Feature Section -->
-  <div class="overflow-hidden bg-gray-900 py-20 sm:py-32">
+  <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
-      >
-        <div class="lg:pr-8 lg:pt-4">
-          <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-indigo-400">
-              By faith
-            </h2>
-            <p
-              class="mt-2 text-3xl font-bold tracking-tight text-base-content sm:text-4xl"
-            >
-              Writing is an act of faith
-            </p>
-            <dl
-              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none"
-            >
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-base-content">
-                  Faith in yourself as a writer
-                </dt>
-                <dd class="inline">despite all the imperfections</dd>
-              </div>
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-base-content">
-                  Faith in your writing
-                </dt>
-                <dd class="inline">to do good for those who read</dd>
-              </div>
-              <div class="relative pl-9">
-                <dt class="inline font-semibold text-base-content">
-                  Faith in your motivations
-                </dt>
-                <dd class="inline">to write</dd>
-              </div>
-            </dl>
+      <div class="mx-auto max-w-2xl sm:text-center">
+        <h2 class="text-base font-semibold leading-7 text-secondary">
+          By faith
+        </h2>
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+        >
+          Writing is an act of faith
+        </p>
+      </div>
+    </div>
+    <div class="relative overflow-hidden pt-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <img
+          src={jjLookingOut}
+          alt="jj at the beach looking out"
+          class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
+          width="2432"
+          height="1442"
+        />
+        <div class="relative" aria-hidden="true">
+          <div
+            class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]"
+          >
           </div>
         </div>
-        <img
-          src={firstFeatureImg}
-          alt="jj at the beach ii"
-          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-        />
       </div>
+    </div>
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <dl
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16"
+      >
+        <div class="relative pl-9 text-lg">
+          <dt class="inline font-semibold text-white">Faith in your efforts</dt>
+          <dd class="inline">to bear fruit.</dd>
+        </div>
+        <div class="relative pl-9 text-lg">
+          <dt class="inline font-semibold text-white">Faith in your writing</dt>
+          <dd class="inline">to do good.</dd>
+        </div>
+        <div class="relative pl-9 text-lg">
+          <dt class="inline font-semibold text-white">
+            Faith in your motivations
+          </dt>
+          <dd class="inline">to write.</dd>
+        </div>
+      </dl>
     </div>
   </div>
   <!-- Second Feature Section -->
-  <div class="overflow-hidden bg-gray-900 py-20 sm:py-24">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mt-32 overflow-hidden sm:mt-40">
+    <div class="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
       <div
-        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8"
       >
-        <img
-          src={secondFeatureImg}
-          alt="jj at the beach ii"
-          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-        />
-        <div class="lg:pr-8 lg:pt-4">
-          <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-indigo-400">
-              But not alone
-            </h2>
-            <p
-              class="mt-2 text-3xl font-bold tracking-tight text-base-content sm:text-4xl"
+        <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            So it's too risky to do alone
+          </h2>
+          <p class="mt-6 text-xl leading-8 text-base-content">
+            Join me in wondering out loud.
+          </p>
+          <p class="mt-6 text-base leading-7 text-gray-600">
+            You can't leave comments yet though soz. W.I.P. Join the tele group
+            or the mail list. If you can.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents"
+        >
+          <div
+            class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
+          >
+            <img
+              src={coastCommunity}
+              alt="jj and his homies at the beach"
+              class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+            />
+          </div>
+          <div
+            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8"
+          >
+            <div
+              class="order-first flex w-64 flex-none justify-end self-end lg:w-auto"
             >
-              we should do in community
-            </p>
-            <p class="mt-6 text-base leading-8 text-gray-300">
-              my space to wonder out loud and invite others to join me. A space
-              to be vocal and accountable. A space to assert and explore.
-            </p>
+              <img
+                src={jjAndDrew}
+                alt="jj and drew with cake"
+                class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+              />
+            </div>
+            <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
+              <img
+                src={clocktowerCommunity}
+                alt="jj and his friends at a coastal clocktower"
+                class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+              />
+            </div>
+            <div
+              class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none"
+            >
+              <img
+                src={baCommmunity}
+                alt="picture of church community"
+                class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -97,15 +137,13 @@ import secondFeatureImg from "/images/coast-community.jpg?url";
     <div
       class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8"
     >
-      <h2
-        class="text-3xl font-bold tracking-tight text-base-content sm:text-4xl"
-      >
-        There's no entrance fee
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        No entrance fee
       </h2>
       <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
         <a
           href="/posts/"
-          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-base-content shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >Start Reading</a
         >
         <a
