@@ -24,20 +24,22 @@ const blogEntries = await getCollection("blog");
               <article class="flex max-w-xl flex-col items-start justify-between">
                 <div class="flex items-center gap-x-4 text-xs">
                   <time
-                    datetime={blogPostEntry.data.date}
-                    class="text-base-content"
+                    datetime={blogPostEntry.data.datePublished}
+                    class="flex-none text-base-content"
                   >
-                    {blogPostEntry.data.date}
+                    {blogPostEntry.data.datePublished}
                   </time>
-                  {blogPostEntry.data.tags.map((tag) => (
-                    // todo : create tags page
-                    <a
-                      href="#"
-                      class="relative z-10 rounded-full bg-secondary px-3 py-1.5 font-medium text-info-content hover:bg-secondary-focus"
-                    >
-                      {tag}
-                    </a>
-                  ))}
+                  <div class="flex flex-wrap">
+                    {blogPostEntry.data.tags.map((tag) => (
+                      // todo : create tags page
+                      <a
+                        href="#"
+                        class="m-1 relative z-10 rounded-lg bg-info-content px-3 py-1.5 font-medium text-primary hover:text-primary-focus"
+                      >
+                        {tag}
+                      </a>
+                    ))}
+                  </div>
                 </div>
                 <div class="group relative">
                   <h3 class="mt-3 text-lg font-semibold leading-6 text-accent group-hover:text-accent-focus">
