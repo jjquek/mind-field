@@ -5,7 +5,7 @@ import { z, defineCollection } from "astro:content";
 const miscCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    description: z.string().default("JJ Quek"),
+    author: z.string().default("JJ Quek"),
   }),
 });
 
