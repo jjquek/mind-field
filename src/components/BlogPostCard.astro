@@ -18,7 +18,7 @@ const { entry } = Astro.props;
       {
         entry.data.tags.map((tag) => (
           <a
-            href="#"
+            href={`/tags/${tag}`}
             class="m-1 relative z-10 rounded-lg bg-info-content px-3 py-1.5 font-medium text-primary hover:text-primary-focus"
           >
             {tag}
