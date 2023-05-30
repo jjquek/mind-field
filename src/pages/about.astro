@@ -1,30 +1,73 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import jjLookingOut from "/images/coast-ii.jpg?url";
 ---
 
 <BaseLayout pageTitle="About">
-  <main class="isolate">
-    <!-- Hero section -->
-    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-40 lg:px-8">
-      <div
-        class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8"
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl">
+      <h1
+        class="mt-10 text-3xl font-bold tracking-tight text-accent sm:text-4xl"
       >
-        <h1
-          class="max-w-2xl text-4xl font-bold tracking-tight text-base-content sm:text-6xl lg:col-span-2 xl:col-auto"
-        >
-          Work In Progress
-        </h1>
-        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-300">
-            Check out the posts for now : )
+        mah mind is always buzzin
+      </h1>
+      <p class="mt-6 text-xl leading-8">
+        Here's why I'm starting this blog, why I've included the features in it,
+        and what I'm hoping to achieve.
+      </p>
+      <figure class="mt-10 border-l border-indigo-600 pl-9">
+        <blockquote class="font-normal text-secondary">
+          <p>
+            As Lucretia Yaghjian reminds us, writing is an act of faith: “Faith
+            in yourself as a writer; faith in the importance of what you are
+            writing; faith that there will be an audience for what you will
+            write; faith that your writing will contribute ultimately to the
+            flourishing of those who read it; and finally, faith in the source
+            of your desire to write.”
           </p>
-        </div>
+        </blockquote>
+        <figcaption class="mt-6 flex gap-x-4">
+          <div class="text-sm leading-6">
+            <strong class="font-normal text-base-content"
+              >Pierce Taylor Hibbs</strong
+            > – in "We Who Work With Words: Towards a Theology of Writing"
+          </div>
+        </figcaption>
+      </figure>
+      <p class="mt-10">
+        Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim.
+        Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent
+        donec est. Odio penatibus risus viverra tellus varius sit neque erat
+        velit.
+      </p>
+      <div class="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
         <img
-          src="/images/about-pic.jpg"
-          alt="jj and his bike"
-          class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+          src={jjLookingOut}
+          alt="jj at the beach looking out"
+          class="rounded-xl shadow-2xl ring-1 ring-white/10"
+          width="2432"
+          height="1442"
         />
       </div>
+      <div class="mt-10 max-w-2xl">
+        <h2 class="text-2xl font-bold tracking-tight text-primary">
+          I'll figure out what to put here eventually
+        </h2>
+        <p class="mt-6">
+          Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam
+          varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales
+          cursus tristique. Tincidunt sed tempus ut viverra ridiculus non
+          molestie. Gravida quis fringilla amet eget dui tempor dignissim.
+          Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum
+          convallis quam.
+        </p>
+        <p class="mt-8">
+          Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
+          enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
+          praesent donec est. Odio penatibus risus viverra tellus varius sit
+          neque erat velit.
+        </p>
+      </div>
     </div>
-  </main>
+  </div>
 </BaseLayout>
