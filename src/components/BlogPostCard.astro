@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  entry: CollectionEntry<"blog">;
+}
+const { entry } = Astro.props;
+---
+
+<article class="flex max-w-xl flex-col items-start justify-between">
+  <div class="flex items-center gap-x-4 text-xs">
+    <time
+      datetime={entry.data.datePublished}
+      class="flex-none text-base-content"
+    >
+      {entry.data.datePublished}
+    </time>
+    <div class="flex flex-wrap">
+      {
+        entry.data.tags.map((tag) => (
+          <a
+            href={`/tags/${tag}`}
+            class="m-1 relative z-10 rounded-lg bg-info-content px-3 py-1.5 font-medium text-primary hover:text-primary-focus"
+          >
+            {tag}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+  <div class="group relative">
+    <h3
+      class="mt-3 text-lg font-semibold leading-6 text-accent group-hover:text-accent-focus"
+    >
+      <a href={`/posts/${entry.slug}`}>
+        <span class="absolute inset-0"></span>
+        {entry.data.title}
+      </a>
+    </h3>
+    <p class="mt-5 line-clamp-3 text-sm leading-6 text-base-content">
+      {entry.data.description}
+    </p>
+  </div>
+</article>
