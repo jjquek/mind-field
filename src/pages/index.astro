@@ -4,18 +4,15 @@ import BgImageWText from "../components/BgImageWText.astro";
 import headerImg from "/images/coast-i.jpg?url";
 import jjLookingOut from "/images/coast-ii.jpg?url";
 import coastCommunity from "/images/coast-community.jpg?url";
-import clocktowerCommunity from "/images/clocktower-comm.jpg?url";
-import coastCommunityII from "/images/coast-community-ii.jpg?url";
-import jjAndStreams from "/images/jj-by-the-streams.jpg?url";
 ---
 
-<BaseLayout pageTitle="Mind Field">
+<BaseLayout pageTitle="Minds on Fire">
   <!-- Header Section -->
   <BgImageWText
     imgSrc={headerImg}
     altText="jj at the beach"
-    header="mind field"
-    text="depicting the bursts in mah mind"
+    header="minds on fire"
+    text="minting treasures from mental dross"
   />
   <!-- First Feature Section -->
   <div class="bg-gray-900 py-24 sm:py-32">
@@ -27,7 +24,7 @@ import jjAndStreams from "/images/jj-by-the-streams.jpg?url";
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-accent sm:text-4xl"
         >
-          I'm writing to clean up my mind
+          I write to clean up my mind
         </p>
       </div>
     </div>
@@ -60,11 +57,14 @@ import jjAndStreams from "/images/jj-by-the-streams.jpg?url";
             help a fella out
           </h2>
           <p class="mt-6 text-xl leading-8 text-base-content">
-            Join me in wondering out loud.
+            Join me in public wonder.
           </p>
           <p class="mt-6 text-base leading-7 text-gray-600">
-            You can't leave comments yet though soz. W.I.P. Join the tele group
-            or the mail list. If you can.
+            Yea those photos above are pretty edgy but aren't they great?
+            Shoutout to Gabe (if you know you know) for taking them.
+          </p>
+          <p class="mt-6 text-base leading-7 text-gray-600">
+            Take a guess: did I pose for them? : o
           </p>
         </div>
         <div
@@ -78,36 +78,6 @@ import jjAndStreams from "/images/jj-by-the-streams.jpg?url";
               alt="jj and his homies at the beach"
               class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
             />
-          </div>
-          <div
-            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8"
-          >
-            <!-- todo : these images load pretty slowly. May want to consider using the Image/Picture comopnent, but need to figure out how to do that w the tailwind classes -->
-            <div
-              class="order-first flex w-64 flex-none justify-end self-end lg:w-auto"
-            >
-              <img
-                src={jjAndStreams}
-                alt="jj by some wet vegetation"
-                class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-              />
-            </div>
-            <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-              <img
-                src={clocktowerCommunity}
-                alt="jj and his friends at a coastal clocktower"
-                class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-              />
-            </div>
-            <div
-              class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none"
-            >
-              <img
-                src={coastCommunityII}
-                alt="jj and his pals by the beach ii"
-                class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
